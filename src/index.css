@@ -12,3 +12,179 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.header-color {
+  background: #192a56;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+
+
+/* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+
+
+.nav-link {
+  font-size: 1.5em;
+  padding: 20px;
+}
+
+
+
+/*Landing Paaaaaaage */
+.landing {
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 20px 20px;
+
+}
+.img-cont {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.avatar-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.banner-cont{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.banner {
+
+  border : 1px solid white ;
+  border-radius: 15px;
+  margin: 10px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.banner h1 {
+  color: white;
+  font-size: 66px;
+  font-weight: bold;
+
+}
+.banner hr {
+  width: 40%;
+  border-top: 5px dotted white;
+
+}
+.banner p {
+  color:white;
+  font-size: 20px;
+  padding: 1em;
+
+}
+.social-links  {
+ display: flex;
+ justify-content: space-around;
+ width: 60%;
+}
+.social-links i {
+  color: white;
+  font-weight: 400;
+  font-size: 5em;
+  padding: 8px;
+}
+/* project paaaaaaaaaage */
+
+
+.projects-container {
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+/* Make breakPoint here */
+.project-card {
+  width: 30%;
+  display: inline-block;
+  margin: 20px;
+  color:#273c75;;
+}
+.project-title {
+  width: 100%;
+  background: #273c75;
+}
+.git-repo {
+  font-weight: bold;
+}
+
+.contact {
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  height: 565px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  color: white;
+}
+.contact .cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+/* media queries */
+@media screen and (max-width : 1200px) {
+  .banner {
+    align-items: center;
+
+   }
+   .banner h1 {
+     font-size: 50px;
+
+   }
+  .projects-container {
+    justify-content: space-between;
+  }
+  .project-card {
+  width: 40% ;
+}
+
+}
+
+@media screen and (max-width : 700px) {
+
+   .banner h1 {
+     font-size: 40px;
+
+
+   }
+  .projects-container {
+    justify-content: center;
+  }
+  .project-card {
+  width: 80% ;
+}
+
+}
+
+@media screen and (max-width : 330px)  {
+  .nav-link {
+    padding: 20px 10px 20px 10px;
+  }
+}
